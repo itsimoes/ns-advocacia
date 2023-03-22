@@ -1,4 +1,4 @@
-import { Button, Container, Link } from "@mui/material";
+import { Container, Link } from "@mui/material";
 import React from "react";
 import "./style.scss";
 import Avatar from "../../assets/avatar.png";
@@ -17,7 +17,7 @@ const Home = () => {
                 <ArrowForwardIosIcon />
               </Link>{" "}
             </div>
-            <Button id="home-link-mobile"
+            {/* <Button id="home-link-mobile"
               variant="contained"
               sx={{
                 bgcolor: "goldenrod", 
@@ -29,7 +29,7 @@ const Home = () => {
               }}
             >
               Entre em contato conosco
-            </Button>
+            </Button> */}
           </div>
           <div className="home-card-wrapper">
             <div>

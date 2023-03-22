@@ -1,44 +1,3 @@
-// a {
-//   text-decoration: none !important;
-//   color: goldenrod !important;
-//   font-weight: 500 !important;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-// }
-// a:hover {
-//   color: gold !important;
-//   cursor: pointer;
-//   filter: drop-shadow(0 0 0.1rem rgb(133, 98, 10));
-// }
-
-.home-link a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: goldenrod !important;
-  text-decoration: none !important;
-  position: relative;
-}
-
-.home-link a::after {
-  content: "";
-  background: goldenrod;
-  mix-blend-mode: difference;
-  width: calc(100% + 20px);
-  height: 0;
-  position: absolute;
-  bottom: -4px;
-  left: -10px;
-  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-.home-link a:hover::after {
-  height: calc(100% + 8px);  
-  cursor: pointer;
-}
-
 .wrapper {
   display: flex;
   justify-content: center;
@@ -99,11 +58,32 @@
 
 .home-link {
   display: flex;
-  align-items: center;
-}
+  
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: goldenrod !important;
+    text-decoration: none !important;
+    position: relative;
+  }
 
-#home-link-mobile {
-  display: none;
+  a::after {
+    content: "";
+    background: goldenrod;
+    mix-blend-mode: difference;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  a:hover::after {
+    height: calc(100% + 8px);  
+    cursor: pointer;
+  }
 }
 
 /*-- MEDIA QUERY --*/
@@ -121,12 +101,34 @@
     align-items: center;
     text-align: center;
   }
-  #home-link-desktop {
-    display: none;
-  }
-  #home-link-mobile {
-    display: flex;
-    align-self: center !important;   
+  .home-link {       
+    align-self: center;   
+
+    a {
+      color: black !important;
+      background-color: goldenrod;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    a:hover {
+        color: black !important;
+    }
+
+    a::after {
+      content: "";
+      background: goldenrod;
+      mix-blend-mode: difference;
+      width: 100%;
+      height: 0;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    a:hover::after {
+      height: 100%;      
+    }
   }
   
   .left-content-wrapper {
