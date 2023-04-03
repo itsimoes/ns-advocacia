@@ -1,0 +1,120 @@
+:root {
+  --golden: goldenrod;
+  --aliceblue: aliceblue;
+  --black: black;
+}
+
+.navbar-wrapper {
+  position: absolute !important;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: var(--aliceblue);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav-container-desktop {
+  display: flex !important;
+  height: 70px !important;
+  width: 100%;
+}
+
+.MuiMenu-paper {
+  background-color: rgba(0, 0, 0, 1) !important;
+  // color: aliceblue !important;
+  width: 100vw;
+  height: 50vh;  
+  display: flex !important;
+  justify-content: center;
+  
+}
+
+.MuiMenu-list {        
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-typography {
+  color: goldenrod;
+  font-weight: 600 !important;
+  width: 100vw !important;
+}
+
+.mobile-menu-divider {
+  background-color: aliceblue !important;  
+  width: 80vw;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60px;                     // height and padding-bottom are related
+  padding-bottom: 10px !important;   // height and padding-bottom are related
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  text-decoration: none !important;
+  color: var(--aliceblue) !important;
+  cursor: pointer;
+
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.nav-button:hover {
+  background-color: var(--golden);
+  color: var(--black) !important;
+}
+
+.logo {
+  font-size: 50px;
+  display: flex;  
+  height: 75px;
+  margin-left: -15px !important;
+  margin-right: 70px !important;  
+  text-decoration: none !important;
+  color: var(--aliceblue) !important;
+  cursor: pointer;
+
+  -webkit-transition: all 0.8s ease-in !important;
+  transition: all 0.8s ease-in !important;
+}
+
+.logo:hover {
+  color: var(--golden) !important;
+  #logo1 {
+    display: none;
+  }
+  #logo2 {
+    display: flex;
+  }
+}
+
+#logo2 {
+  display: none;
+}
+
+.menu-button-mobile {
+    display: flex;
+    height: 70px;
+    border-radius: 50% !important;
+    text-decoration: none !important;
+    color: aliceblue !important;
+}
+
+.menu-button-mobile:active {
+    color: goldenrod !important;
+}
+
+
+
+/* -- MEDIA QUERY --*/
+@media screen and (max-width: 540px) {
+  .nav-container-desktop {
+    display: none !important;
+  }
+
+  // .nav-container-mobile {
+  //   display: flex !important;
+  // }
+}
+
