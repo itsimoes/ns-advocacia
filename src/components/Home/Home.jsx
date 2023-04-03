@@ -16,20 +16,7 @@ const Home = () => {
                 <p>Entre em contato conosco</p>
                 <ArrowForwardIosIcon />
               </Link>{" "}
-            </div>
-            {/* <Button id="home-link-mobile"
-              variant="contained"
-              sx={{
-                bgcolor: "goldenrod", 
-                color: "black",             
-                ":hover": { bgcolor: "lightgrey"},
-                paddingTop: "10px",
-                paddingBottom: "10px",
-                fontWeight: "600"
-              }}
-            >
-              Entre em contato conosco
-            </Button> */}
+            </div>           
           </div>
           <div className="home-card-wrapper">
             <div>
