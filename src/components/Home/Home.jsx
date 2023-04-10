@@ -4,6 +4,7 @@ import "./style.scss";
 import Avatar from "../../assets/avatar.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import VideoIcon from "../../assets/video-icon.png";
+import { AllInclusive } from "@mui/icons-material";
 
 const Home = () => {
   return (
@@ -111,32 +112,43 @@ const Home = () => {
                   03<span>.</span>
                 </h2>
                 <p>lorem ipsum</p>
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                <h3>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h3>
               </div>
               <div className="number-card">
                 <h2>
                   04<span>.</span>
                 </h2>
                 <p>lorem ipsum</p>
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                <h3>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h3>
               </div>
               <div className="number-card">
                 <h2>
                   05<span>.</span>
                 </h2>
                 <p>lorem ipsum</p>
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                <h3>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h3>
               </div>
               <div className="number-card">
                 <h2>
                   06<span>.</span>
                 </h2>
                 <p>lorem ipsum</p>
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                <h3>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h3>
               </div>
             </div>
           </div>
         </Container>
+        <a id="itsimoes" href="https://itsimoes.github.io/portfolio-site/" target="_blank">
+          <AllInclusive />
+        </a>
       </div>
     </>
   );
