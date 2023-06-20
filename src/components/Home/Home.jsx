@@ -146,7 +146,7 @@ const Home = () => {
             </div>
           </div>
         </Container>
-        <a id="itsimoes" href="https://itsimoes.github.io/portfolio-site/" target="_blank">
+        <a id="itsimoes" href="https://itsimoes.github.io/portfolio-site/" rel="noreferrer" target="_blank">
           <AllInclusive />
         </a>
       </div>
