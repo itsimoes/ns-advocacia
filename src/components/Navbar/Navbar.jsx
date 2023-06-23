@@ -10,7 +10,8 @@ import MenuItem from "@mui/material/MenuItem";
 import Logo1 from "../../assets/logo1.png";
 import Logo2 from "../../assets/logo2.png";
 import "./style.scss";
-import { Divider, Link } from "@mui/material";
+import { Divider } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -37,7 +38,7 @@ const Navbar = () => {
           <Link to="/" className="nav-button">
             Home
           </Link>
-          <Link to="/" className="nav-button">
+          <Link to="/sobre" className="nav-button">
             Sobre
           </Link>
           <Link to="/" className="nav-button">
@@ -74,24 +75,53 @@ const Navbar = () => {
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
             sx={{
-              display: { xs: "block", md: "none" },              
+              display: { xs: "block", md: "none" },
             }}
           >
-            <MenuItem onClick={handleCloseNavMenu} >
-              <Typography textAlign="center" className="mobile-menu-typography" >Home</Typography>
-            </MenuItem >
-            <Divider  className="mobile-menu-divider" />
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center" className="mobile-menu-typography" >Sobre</Typography>
-            </MenuItem>
             <Divider className="mobile-menu-divider" />
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center" className="mobile-menu-typography" >Serviços</Typography>
-            </MenuItem>
+            <Link to="/" className="nav-link">
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography
+                  textAlign="center"
+                  className="mobile-menu-typography"
+                >
+                  Home
+                </Typography>
+              </MenuItem>
+            </Link>
             <Divider className="mobile-menu-divider" />
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center" className="mobile-menu-typography" >Contato</Typography>
-            </MenuItem>
+            <Link to="/sobre"  className="nav-link">
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography
+                  textAlign="center"
+                  className="mobile-menu-typography"
+                >
+                  Sobre
+                </Typography>
+              </MenuItem>
+            </Link>
+            <Divider className="mobile-menu-divider" />
+            <Link to="/"  className="nav-link">
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography
+                  textAlign="center"
+                  className="mobile-menu-typography"
+                >
+                  Serviços
+                </Typography>
+              </MenuItem>
+            </Link>
+            <Divider className="mobile-menu-divider" />
+            <Link to="/"  className="nav-link">
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography
+                  textAlign="center"
+                  className="mobile-menu-typography"
+                >
+                  Contato
+                </Typography>
+              </MenuItem>
+            </Link>
             <Divider className="mobile-menu-divider" />
           </Menu>
         </Container>
