@@ -1,9 +1,4 @@
-:root {
-  --golden: goldenrod;
-  --aliceblue: aliceblue;
-  --black: black;
-  --grey: gray;
-}
+
 
 /*-- TOP --*/
 .wrapper {
@@ -39,7 +34,7 @@
   }
   p {
     font-size: 12px;
-    color: (var(--grey));
+    color: (var(--gray));
   }
 }
 .upper-home-text-wrapper {
@@ -218,7 +213,7 @@
 /* --- MIDDLE -- */
 
 .home-middle-wrapper {
-  background-color: aliceblue;
+  background-color: var(--white);
 }
 
 .sobre-content-wrapper {
@@ -246,6 +241,7 @@
   justify-content: space-evenly;
   width: 50%;
   height: 250px;
+  color: var(--slategrey);
 
   h2 {
     font-size: 40px;
@@ -367,7 +363,7 @@
   }
   h3 {
     font-size: 12px;
-    color: (var(--grey));
+    color: (var(--gray));
   }
 
   span {

@@ -1,10 +1,10 @@
-import { Container, Link } from "@mui/material";
 import React from "react";
-import "./style.scss";
+import { Container } from "@mui/material";
 import Avatar from "../../assets/avatar.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import VideoIcon from "../../assets/video-icon.png";
 import { AllInclusive } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+import "./style.scss";
 
 const Home = () => {
   return (
@@ -47,8 +47,8 @@ const Home = () => {
       </div>
       <div className="home-middle-wrapper">
         <Container className="sobre-content-wrapper">
-          <div className="video-wrapper">
-            <img src={VideoIcon} alt="" />
+          <div className="video-wrapper">            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className="text-wrapper">
             <h2>Sobre Nós</h2>
@@ -58,7 +58,7 @@ const Home = () => {
               illum libero nisi cum iusto explicabo in voluptatibus, repudiandae
               obcaecati pariatur maiores voluptates quis quam.
             </p>
-            <Link>
+            <Link to="/sobre">
               <p>Saiba mais</p>
               <ArrowForwardIosIcon />
             </Link>
