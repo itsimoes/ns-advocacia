@@ -28,6 +28,7 @@ const Servicos = () => {
         <hr className="servicos-divider" />
 
         <div className="servicos-wrapper-content">
+          <BusinessCenter className="servicos-icon" />
           <h2>Serviço 02</h2>
           <div>
             <img className="servicos-thumb" src={Servicos02} alt="" />
@@ -38,8 +39,8 @@ const Servicos = () => {
               praesentium eius quae provident.
             </p>
           </div>
-        </div>     
-       
+        </div>
+
         <hr className="servicos-divider" />
       </Container>
     </div>

@@ -41,10 +41,10 @@ const Navbar = () => {
           <Link to="/sobre" className="nav-button">
             Sobre
           </Link>
-          <Link to="/" className="nav-button">
+          <Link to="/servicos" className="nav-button">
             Serviços
           </Link>
-          <Link to="/" className="nav-button">
+          <Link to="/contato" className="nav-button">
             Contato
           </Link>
         </Container>
@@ -101,7 +101,7 @@ const Navbar = () => {
               </MenuItem>
             </Link>
             <Divider className="mobile-menu-divider" />
-            <Link to="/"  className="nav-link">
+            <Link to="/servicos"  className="nav-link">
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography
                   textAlign="center"
@@ -112,7 +112,7 @@ const Navbar = () => {
               </MenuItem>
             </Link>
             <Divider className="mobile-menu-divider" />
-            <Link to="/"  className="nav-link">
+            <Link to="/contato"  className="nav-link">
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography
                   textAlign="center"

@@ -38,3 +38,17 @@
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+
+
+  /* -- MEDIA QUERY --*/
+@media screen and (max-width: 540px) {
+  .servicos-thumb {
+    width: 100%;
+  }
+
+  .servicos-wrapper-content { 
+  p {
+    text-align: justify;
+  }
+  }
+}
