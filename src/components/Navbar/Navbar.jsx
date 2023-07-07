@@ -31,11 +31,11 @@ const Navbar = () => {
           className="nav-container-desktop"
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
         >
-          <Link to="/" className="logo">
+          <Link to="/ns-advocacia" className="logo">
             <img src={Logo1} id="logo1" alt="" />
             <img src={Logo2} id="logo2" alt="" />
           </Link>
-          <Link to="/" className="nav-button">
+          <Link to="/ns-advocacia" className="nav-button">
             Home
           </Link>
           <Link to="/sobre" className="nav-button">
@@ -79,7 +79,7 @@ const Navbar = () => {
             }}
           >
             <Divider className="mobile-menu-divider" />
-            <Link to="/" className="nav-link">
+            <Link to="/ns-advocacia" className="nav-link">
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography
                   textAlign="center"

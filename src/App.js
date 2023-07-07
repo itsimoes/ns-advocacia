@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/ns-advocacia" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />          
           <Route path="/servicos" element={<Servicos />} />          
           <Route path="/contato" element={<Contato />} />          

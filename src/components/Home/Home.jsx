@@ -17,7 +17,7 @@ const Home = () => {
                 Soluções simples para problemas complexos.
               </h1>
               <div id="home-link-desktop" className="home-link">
-                <Link to="/">
+                <Link to="/contato">
                   <p>Entre em contato conosco</p>
                   <ArrowForwardIosIcon />
                 </Link>{" "}
