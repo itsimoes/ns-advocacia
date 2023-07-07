@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ns-advocacia/static/css/main.83a743f4.css",
-    "main.js": "/ns-advocacia/static/js/main.e220b6ce.js",
+    "main.js": "/ns-advocacia/static/js/main.6becb8a3.js",
     "static/js/787.15ea72f1.chunk.js": "/ns-advocacia/static/js/787.15ea72f1.chunk.js",
     "static/media/bg.jpg": "/ns-advocacia/static/media/bg.edec2c669cb939031717.jpg",
     "static/media/bg-bottom-mobile.jpg": "/ns-advocacia/static/media/bg-bottom-mobile.ab21c70ffda742c105f2.jpg",
@@ -13,11 +13,11 @@
     "static/media/servico-img02.png": "/ns-advocacia/static/media/servico-img02.b0ed059b0154fc9773a4.png",
     "index.html": "/ns-advocacia/index.html",
     "main.83a743f4.css.map": "/ns-advocacia/static/css/main.83a743f4.css.map",
-    "main.e220b6ce.js.map": "/ns-advocacia/static/js/main.e220b6ce.js.map",
+    "main.6becb8a3.js.map": "/ns-advocacia/static/js/main.6becb8a3.js.map",
     "787.15ea72f1.chunk.js.map": "/ns-advocacia/static/js/787.15ea72f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.83a743f4.css",
-    "static/js/main.e220b6ce.js"
+    "static/js/main.6becb8a3.js"
   ]
 }
